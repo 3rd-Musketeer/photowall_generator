@@ -5,11 +5,23 @@ from PIL import Image
 import time
 import cv2 as cv
 
-mask_img_path = #"dir of the front photo"
+### PARAMETERS
+
+mask_img_path = # dir of the front photo
+
+save_filename = "export" # name of file to save the output photo
+
+random.seed(219) # choose your own seed
+
+output_side = 100 # number of photos on each side of the output photo (default rectangular)
+
+photo_side = 300 # number of pixels on each side of the component photos
+
+###
 
 path = os.getcwd()
 
-save_path = os.path.join(path, "export")
+save_path = os.path.join(path, save_filename)
 
 if not os.path.exists(save_path):
     os.mkdir(save_path)
@@ -17,16 +29,10 @@ if not os.path.exists(save_path):
 photo_path = []
 
 for i in os.listdir():
-    if '.jpg' in i:
+    if ('.png' in i) or ('.jpg' in i):
         photo_path.append(os.path.join(path, i))
 
-random.seed(219)
-
-output_side = 100
-
 num_photos = output_side ** 2
-
-photo_side = 300
 
 lst_time = time.time()
 
@@ -111,7 +117,7 @@ cv.imshow('img', output_img)
 
 k = cv.waitKey(0)
 
-if k == 27:
+if k == 27: # detect ESC
     cv.destroyAllWindows()
 
 
