@@ -27,5 +27,5 @@ Config and run photos.py in IDE.
 ## Maintainer
 [Haoyang Wu | riafmz@gmail.com](https://github.com/3rd-Musketeer)
 
-## Liscence
-[MIT](./readme/LISCENCE) &copy; Haoyang Wu
+## License
+[MIT](./readme/LICENSE) &copy; Haoyang Wu
