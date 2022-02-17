@@ -22,7 +22,7 @@ or
 pip install -r requirements.txt
 ```
 ## Usage
-Config and run photos.py in IDE.
+Config and run photos.py in IDE. __It is highly recommended to use rectangular photos.__
 
 ## Maintainer
 [Haoyang Wu | riafmz@gmail.com](https://github.com/3rd-Musketeer)
