@@ -10,12 +10,13 @@ multiple chosen background photos. Initially, Pillow (PIL) was used but the perf
 * Miniconda
 * Python-3.7
 * OpenCV
+
 Detailed environment configuration is specified in [requirements.txt](./requirements.txt)
 ## Installation
 1. You may first install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 2. Run code in you cmd
 ```commandline
-conda intsll --yes --file requirements.txt` 
+conda intsll --yes --file requirements.txt
 ```
 or
 ```commandline
